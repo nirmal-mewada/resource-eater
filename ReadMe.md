@@ -1,8 +1,10 @@
 Application to create dummy load on system, I used it for testing AWS ecs autoscaling
 ##Build Image
- > `mvn clean package`
+> `mvn clean package`
 >
- >`docker build -t nirmalsuthar/resource_eater .`
+>`docker build -t nirmalsuthar/resource_eater .`
+>
+>`docker push nirmalsuthar/resource_eater:latest`
 
 
 ##Run Docker Image
