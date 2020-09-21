@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api/v1/${SERVICE_NAME:unknown}
+spring:
+  application:
+    name: Resource Eater
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
