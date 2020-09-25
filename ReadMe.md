@@ -4,7 +4,7 @@ service endpoint URLs to mimic different micro-services to verify routing used i
 Docker Build: [![Docker Build](https://img.shields.io/docker/cloud/build/nirmalsuthar/resource_eater?logo=resource%20eater)](https://hub.docker.com/repository/docker/nirmalsuthar/resource_eater)
 
 
-##Build Image
+## Build Image
 > `mvn clean package`
 >
 >`docker build -t nirmalsuthar/resource_eater .`
@@ -12,13 +12,13 @@ Docker Build: [![Docker Build](https://img.shields.io/docker/cloud/build/nirmals
 >`docker push nirmalsuthar/resource_eater:latest`
 
 
-##Run Docker Image
+## Run Docker Image
 
 >`docker run -it  -e JAVA_OPTS='-DSERVICE_NAME=service1' --rm -p 8081:8080 --name resource_eater_cnt  nirmalsuthar/resource_eater`
 
-##Endpoints
+## Endpoints
 
-###Actuator/Info
+### Actuator/Info
 >`http://localhost:8080/api/v1/service1/actuator`
 > `http://localhost:8080/api/v1/service1/info`
 
