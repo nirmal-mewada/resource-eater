@@ -14,7 +14,7 @@ Docker Build: [![Docker Build](https://img.shields.io/docker/cloud/build/nirmals
 
 ## Run Docker Image
 
->`docker run -it  -e JAVA_OPTS='-DSERVICE_NAME=service1' --rm -p 8081:8080 --name resource_eater_cnt  nirmalsuthar/resource_eater`
+>`docker run -it  -e JAVA_OPTS='-DSERVICE_NAME=service1' --rm -p 8080:8080 --name resource_eater_cnt  nirmalsuthar/resource_eater`
 
 ## Endpoints
 
@@ -24,7 +24,7 @@ Docker Build: [![Docker Build](https://img.shields.io/docker/cloud/build/nirmals
 
 ### Eating Memory
 Each iteration increase memory usage by  1 MB. 
->`http://localhost:8080/api/v1/service1/memory?iteration=1000&pause=0`
+>`http://localhost:8081/api/v1/service1/memory?iteration=1000&pause=0`
 
 ### Eating CPU
 >`http://localhost:8080/api/v1/service1/cpu/iteration/sync?iteration=99999999`
